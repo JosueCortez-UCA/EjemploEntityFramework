@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EjemploEntityFrameworkModelStoreContainer" CdmEntityContainer="EjemploEntityFramework">
+    <EntitySetMapping Name="csexo">
+      <EntityTypeMapping TypeName="EjemploEntityFrameworkModel.csexo">
+        <MappingFragment StoreEntitySet="csexo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gente">
+      <EntityTypeMapping TypeName="EjemploEntityFrameworkModel.gente">
+        <MappingFragment StoreEntitySet="gente">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="edad" ColumnName="edad" />
+          <ScalarProperty Name="idsexo" ColumnName="idsexo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="insertarGente" FunctionName="EjemploEntityFrameworkModel.Store.insertarGente" />
+  </EntityContainerMapping>
+</Mapping>
